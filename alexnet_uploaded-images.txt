@@ -1,0 +1,95 @@
+Command Line Arguments:
+     dir = uploaded_images/ 
+    arch = alexnet 
+ dogfile = dognames.txt
+
+Pet Image Label Dictionary has 6 key-value pairs.
+Below are 6 of them:
+ 1 key:                labrador_05.jpg  label:                   labrador
+ 2 key:                     dog_02.jpg  label:                        dog
+ 3 key:                     bag_01.jpg  label:                        bag
+ 4 key:                squirrel_01.jpg  label:                   squirrel
+ 5 key:                     dog_01.jpg  label:                        dog
+ 6 key:                  beagle_03.jpg  label:                     beagle
+
+     MATCH:
+
+               labrador_05.jpg: 
+Real:                   labrador   Classifier:             labrador retriever
+
+               squirrel_01.jpg: 
+Real:                   squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier:              eskimo dog, husky
+
+                 beagle_03.jpg: 
+Real:                     beagle   Classifier:                         beagle
+
+ NOT A MATCH:
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier:                 siberian husky
+
+                    bag_01.jpg: 
+Real:                        bag   Classifier: backpack, back pack, knapsack, packsack, rucksack, haversack
+
+# Total Images 6 # Matches: 4 # NOT Matches: 2
+
+     MATCH:
+
+               labrador_05.jpg: 
+Real:                   labrador   Classifier:             labrador retriever  
+PetLabelDog: 0  ClassLabelDog: 1
+
+               squirrel_01.jpg: 
+Real:                   squirrel   Classifier: fox squirrel, eastern fox squirrel, sciurus niger  
+PetLabelDog: 0  ClassLabelDog: 0
+
+                    dog_01.jpg: 
+Real:                        dog   Classifier:              eskimo dog, husky  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                 beagle_03.jpg: 
+Real:                     beagle   Classifier:                         beagle  
+PetLabelDog: 1  ClassLabelDog: 1
+
+ NOT A MATCH:
+
+                    dog_02.jpg: 
+Real:                        dog   Classifier:                 siberian husky  
+PetLabelDog: 1  ClassLabelDog: 1
+
+                    bag_01.jpg: 
+Real:                        bag   Classifier: backpack, back pack, knapsack, packsack, rucksack, haversack  
+PetLabelDog: 0  ClassLabelDog: 0
+
+# Total Images 6 # Matches: 4 # NOT Matches: 2
+
+ ** Statistics from calculates_results_stats() function:
+N Images:  6  N Dog Images:  3  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  66.7  Pct Corr Breed:  66.7
+
+ ** Check Statistics - calculated from this function as a check:
+N Images:  6  N Dog Images:  3  N NotDog Images:  3 
+Pct Corr dog: 100.0 Pct Corr NOTdog:  66.7  Pct Corr Breed:  66.7
+{'n_dogs_img': 3, 'n_match': 4, 'n_correct_dogs': 3, 'n_correct_notdogs': 2, 'n_correct_breed': 2, 'n_images': 6, 'n_notdogs_img': 3, 'pct_match': 66.66666666666666, 'pct_correct_dogs': 100.0, 'pct_correct_breed': 66.66666666666666, 'pct_correct_notdogs': 66.66666666666666}
+
+
+*** Results Summary for CNN Model Architecture ALEXNET ***
+N Images            :   6
+N Dog Images        :   3
+N Not-Dog Images    :   3
+ 
+pct_match: 66.66666666666666
+pct_correct_dogs: 100.0
+pct_correct_breed: 66.66666666666666
+pct_correct_notdogs: 66.66666666666666
+
+INCORRECT Dog/NOT Dog Assignments:
+Real:                   labrador   Classifier:             labrador retriever
+
+INCORRECT Dog Breed Assignment:
+Real:                        dog   Classifier:                 siberian husky
+
+** Total Elapsed Runtime: 0:0:10
